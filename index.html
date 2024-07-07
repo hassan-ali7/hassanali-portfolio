@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script defer src="index.js" > </script>
+</head>
+<body>
+    <section class="_nav">
+        <div class="_contact-info">
+            <div>
+                <h3 class="_h2Name">Hassan Ali</h3>
+            </div> 
+            <div class="contact-item">
+                <span><i class="fa-regular fa-envelope"></i></span>
+                <p class="_pEmail">Hassan@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <span><i class="fas fa-phone"></i></span>
+                <p class="_pPhone">+488119160</p>
+            </div>
+        </div>
+        <div class="nav">
+            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#recommendations">Recommendations</a>
+        </div>
+    </section>
+    
+    <section class="_intro-section">
+        <img alt="_image" src="assets/programmer.png">
+        <div>
+            <h1>Hi, I'm Hassan</h1>
+            <p>
+                I’ve been in Software development for the past 3 years. Over the past 3 years I’ve been doing full stack development in which JavaScript, .NET, ReactJS and SQL have been my main focus. I’ve also gained knowledge and experience in debugging, development, maintenance and testing. With all these skills and experience, I can contribute to both new and existing projects comprehensively. 
+            </p>                
+        </div>
+    </section>
+    <section class="_skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill">
+               <img src="assets/html.png" alt="html">
+                <p>HTML</p>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="assets/css3.png" alt="css">
+                <p>css</p>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="assets/js.png" alt="JavaScript">
+                <p>JavaScript</p>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="assets/c-sharp.png" alt="C#">
+                <p>C#</p>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="assets/web.png" alt=".NET">
+                <p>.NET</p>
+                <p>2 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="assets/library.png" alt="ReactJS">
+                <p>ReactJS</p>
+                <p>1.5 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="assets/sql-server.png" alt="PL/SQL">
+                <p>PL/SQL</p>
+                <p>3 years experience</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="_projects">
+        <div>
+            <h3>Projects</h3>
+        </div>
+        <div class="project">
+            <h4>News & Blogs Website</h4>
+            <ul>
+                <li>Developed Website with Umbraco CMS: Built and maintained a fully functional website using Umbraco, an open-source CMS on the .NET framework.</li>
+                <li>Data Visualization with ReactJS: Created dynamic and interactive charts using ReactJS and the Google Analytics API (GA4) to visualize key metrics and trends.</li>
+                <li>Problem Solving: Addressed and resolved technical issues and bugs promptly to maintain seamless user experience.</li>
+            </ul>
+        </div>
+        <hr class="_hr">
+        <div class="project">
+            <h4>Laptop Shop</h4>
+            <ul>
+                <li>Integrated external authentication (Google, Facebook) and Duende Identity Server.</li>
+                <li>Managed user roles (Admin, Client) via AspNetUsers and AspNetRoles.</li>
+                <li>Resulted in a 40% reduction in unauthorized access attempts.</li>
+                <li>Built a comprehensive system using ASP.NET WPI CRUD operations and SQL Server.</li>
+                <li>Utilized Razor Views and TagHelpers for a seamless UI.</li>
+                <li>Reduced stock discrepancies by 30% and audit time by 25%.</li>
+                <li>Added interactive and real-time features with Blazor within the main project.</li>
+                <li>Leveraged Dependency Injection for a modular codebase.</li>
+                <li>Increased user engagement by 20% and reduced development time for new features by 15%.</li>
+            </ul>
+        </div>
+        <hr class="_hr">
+        <div class="project">
+            <h4>Player Ranking Mobile App</h4>
+            <ul>
+                <li>Developed a multi-platform application using .NET MAUI, targeting Android, iOS, and Windows platforms.</li>
+                <li>Implemented Flyout and Tab navigation with a login system to secure user access.</li>
+                <li>Utilized styles in at least 4 different places, defined in App.xaml for consistent UI design.</li>
+                <li>Employed CollectionView with selection functionality to display and retrieve detailed information about selected players and teams.</li>
+                <li>Enabled data filtering by search term and sorting by attributes such as size, price, and rating.</li>
+                <li>Developed and consumed REST web services to fetch and save data, using SQL Server.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="_recommendations">
+        <div>
+            <h3>Recommendations</h3>
+        </div>
+        <div id="recommendations-list" class="recommendations-list">
+            <div class="recommendation-item">
+                <p><strong>John Doe:</strong> Great work on the project!</p>
+            </div>
+            <div class="recommendation-item">
+                <p><strong>Jane Smith:</strong> Very professional and skilled developer.</p>
+            </div>
+        </div>
+        <div>
+            <h4>Leave a recommendation</h4>
+            <div>
+                <form id="recommendation-form">
+                    <input type="text" id="name" placeholder="Name (Optional)" class="_name"><br>
+                    <textarea id="message" placeholder="Message" class="_message"></textarea><br>
+                    <input type="submit" id="btnSubmit" value="Submit" class="_btnSubmit">
+                </form>
+            </div>
+            <div class="popup-container">
+                <!-- The pop-up message -->
+                <div class="popup-message">
+                  <h2>Recommendation Submitted!</h2>
+                  <p>Your recommendation has been successfully submitted.</p>
+                  <button class="btn-ok">OK</button>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="_footer">
+        <a href="#" class="fnav-link">
+            <img src="assets/up-arrow.png" alt="Back to navigation">
+        </a>
+    </section>
+</body>
+</html>
